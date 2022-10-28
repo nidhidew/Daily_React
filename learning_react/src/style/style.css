@@ -1,0 +1,13 @@
+body{
+    background-color: #53947a;
+}
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin:auto;
+}
+
+.slide{
+    display: none;
+}

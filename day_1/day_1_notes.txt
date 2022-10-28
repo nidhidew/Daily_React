@@ -1,0 +1,20 @@
+Functional Components
+
+-- these are javascript function they can optionally recieve object of properties which is referred to as props and return HTML describes th UI.
+    Html means in here is JSX but right now we going to use html and js files only for a beginner stage
+-- for example try to study/understand code to learn.
+-- in simple way functions are called by using Components
+-- first create a js file inside a component folder which will be inside src folder.
+-- import react from  'react' and write you functions ; after that export the file name
+-- now import your file component to your app.js file and call the function name inside a html tag
+
+-- now we using arrow syntax for creating a function.
+-- Note: inside one function component only one function name will be there. if we want to create more function then we have to create them inside 
+    that function component.
+
+
+Class Components
+
+-- its similar to functional component ,also can optionally props as input and return HTML
+-- it can maintain a private internal state it means mainatin private information for component and use that information to describe the user interface to get comparison
+-- create a js file and extend a class name with component folder, inside class render html tags after that export the class name and import class in app.js
