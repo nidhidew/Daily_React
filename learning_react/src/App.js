@@ -7,16 +7,26 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello_ex';
 import Message from './components/Messsage';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
+// import ChileComponent from './components/ChildComponent';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
   return (
     <div className="App">
-      <Greetings name="juhi"/>
+      {/* <Greetings name="juhi"/>
       <PortFolio/>
       <Welcome/>
       <Hello/>
       <Message/>
       <Counter/>
+      <FunctionClick/>
+      <ClassClick/> */}
+      {/* <EventBind/> */}
+      <ParentComponent/>
+      
     </div>
   );
 }

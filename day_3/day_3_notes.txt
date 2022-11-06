@@ -1,0 +1,17 @@
+Event handling
+- event handling means html tags will be handling from js side by using functions.
+- for class and functional components its the same method
+- we will create a function and use that in html tags 
+- for example please consider learning_react project
+
+Binding Event Handlers
+- Binding the event method ; in that we use bind method render method
+- another approch is arrow function in class property
+- another one is Binding in class constructor
+- for example please consider the project
+
+Methods as Props
+
+- earlier we see that how parent component pass down the props to the children component.
+- but if child component want to communicate with parent component and that time we will use methods in place of props.
+- for explanation please follow the project
