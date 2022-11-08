@@ -15,3 +15,21 @@ Methods as Props
 - earlier we see that how parent component pass down the props to the children component.
 - but if child component want to communicate with parent component and that time we will use methods in place of props.
 - for explanation please follow the project
+
+Conditional Rendering
+
+- sometimes we have to hide or show html based on a certain condition; here we are using conditional rendering and it works the same way conditions 
+work in javascript.
+- there are 4 type of approches are there
+1. if/else
+2. Element variables
+3. Ternary conditional operator
+4. Short circuit operator
+- please consider project for understanding
+
+List Rendering
+
+- to showing a list of content we going to use list rendering
+- please consider project for understanding
+
+
