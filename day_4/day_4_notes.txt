@@ -1,0 +1,40 @@
+Lists and keys
+- each array or iterator have a unique key prop. in react rendered using the map operator should have a prop called key and value to the prop should be unique
+- key prop is not accetable in child components
+- and it can be defined like key={prop}
+- please refer a project for explaination
+- for example 
+1. list without key attribute
+<ul>
+    <li>Bruce</li>
+    <li>Clark</li>
+</ul>
+
+- without the key attribute no key value and if we add any value in between of list or anywhere it can be a problem. it will be findout that data list is different 
+but there is no key value so it need to solve or find the problem will be difficult
+
+2. list with key attribute
+<ul>
+    <li key="1">Bruce</li>
+    <li key="2">Clark</li>
+</ul>
+
+- now we know the key value so its easy to findout out the problem in simple way when we know the serial number its easy to modify them and work with them.
+
+-A key is a special attribute you need to include when creating lists od elements
+- keys give the elements a stable identity
+- keys help react identity which items have changed , are added  or removed
+- help in efficient update of the user interface
+
+Index as key anti-pattern
+
+<ul>
+    <li key="0">1</li>
+    <li key="1">2</li>
+    <li key="2">3</li>
+</ul>
+- we can modify these above list
+- when to use index as key?
+1. the items in you list do not have a unique id.
+2. the list is a static list and will not change.
+3. the list will naver be reordered or filtered.
