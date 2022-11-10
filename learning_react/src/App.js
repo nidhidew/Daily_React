@@ -14,10 +14,17 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import './appStyles.css';
+import styles from './appStyles.modules.css'
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
+      {/* <h1 className='error'>Error</h1>
+      <h1 className='success'>Success</h1> */}
       {/* <Greetings name="juhi"/>
       <PortFolio/>
       <Welcome/>
@@ -29,8 +36,10 @@ function App() {
       {/* <EventBind/> */}
       {/* <ParentComponent/> */}
       {/* <UserGreeting/> */}
-      <NameList/>
-      
+      {/* <NameList/> */}
+      {/* <Stylesheet primary="false"/>  
+      <Inline/>     */}
+      <Form/>
     </div>
   );
 }

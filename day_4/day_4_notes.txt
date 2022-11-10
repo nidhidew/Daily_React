@@ -38,3 +38,13 @@ Index as key anti-pattern
 1. the items in you list do not have a unique id.
 2. the list is a static list and will not change.
 3. the list will naver be reordered or filtered.
+
+Styling and CSS Basics
+
+1. CSS stylesheet
+2. Inline Styling
+3. CSS Modules
+4. Css in JS libaries
+
+Basics of form handling (Controlled Components)
+-  
