@@ -47,4 +47,80 @@ Styling and CSS Basics
 4. Css in JS libaries
 
 Basics of form handling (Controlled Components)
--  
+
+LifeCycle Methods
+
+- Mounting: when an instance of a component is being created and inserted into the DOM
+- updating: when a component is being re-rendered as a result of changes to either its props or state
+- unmounting: when a component is being removed from the DOM
+- error handling: when there is an error during rendering, in a lifecycle method, or in the constructor of any child component
+
+
+Mounting lifecycle methods: constructor, static getDerivedStateFromProps, render and componentDidMount
+updatting lifecycle methods: static getDerivedStateFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate and componentDidMount
+unmounting lifecycle methods: componentWillUnmount
+error handling lifecycle mthods: static getDerivedStateFromError and componentDidCatch
+
+MOUNTING LIFECYCLE METHODS-----------
+constructor: 
+- a specialfunction that will get called whenever a new component is created
+- initializing state
+- binding the event handlers
+- super(props) we going to use
+- Directly overwrite this.state
+- dont call any https request within constructor
+
+static getDerivedStateFromProps:
+- when the state of the component depends on changes in props over time
+- set the state
+- dont call any https request within constructor
+
+render:
+- only required method
+- Read props and state and return JSX
+- Do not change state or interact with DOM or make ajax calls
+- Children components lifecycle methods are also executed
+
+componentDidMount():
+- invoked immediately after a component and all its Children component have been rendered to the DOM
+- interact with the DOM or perform any ajax calls to load data
+
+UPDATING LIFESTYLE METHODS
+
+static getDerivedStateFromProps(props,state):
+-method is called every time a component is re-rendered
+-set the state
+-do not cause any side effects
+
+shouldComponentUpdate(nextProps,nextState):
+-Dictates if the component should re-render or not
+-Performance optimization
+-Do not cause side effects. ex: https request, calling the setState method
+
+render():
+-only required method-read props and state and return JSX
+-do not change state or interact with DOM or make ajax calls
+
+getSnapshotBeforeUpdate(prevProps,prevState):
+-called right before the changes from the virtual DOM are to be reflected in the DOM
+- capture some information from the DOM
+-Method will either null or return a avalue. Returned value will be passed as athe third parameter to the next method.
+
+componentDidUpdate(prevProps,prevState,snapshot):
+-called after the render is finished in the re-render cycles
+-cause side effects
+
+
+UNMOUNTING PHASE METHODS
+
+componentWillUnmount():
+-Method is invoked immediately before a component is unmounted and destroyed
+-cancelling any network requests, removing event handlers,cancelling any subscriptions and also invalidating timers
+-do not call the setState method
+
+ERROR HANDLING PHASE METHODS
+
+static getDerivedStateFromError(error)
+componentDidCatch(error,info)
+
+when there is an error either during rendring in a lifecycle method or in the constructor of any child component 

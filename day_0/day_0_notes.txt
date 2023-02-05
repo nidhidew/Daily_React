@@ -6,7 +6,7 @@ and how to add components we going to learn by doing.
 1. how to create React app
 --we will use a command in terminal "npx create-react-app app-name"
 --"cd app-name"
---"start npm"
+--"start npm"  or   "npm run start"
 
 2.components
 --header
