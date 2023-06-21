@@ -1,0 +1,31 @@
+* name - Users List.
+* what it will do - add username and age
+* what concepts will be covered - core/basic concepts
+
+* steps to create this react project
+--------------------------------------
+- first create react app 
+- plan what we want to show in the project(like a rough sketch)
+- create your Components directory
+- inside Components dir i am going to create following dir:-
+        - UI
+        - Users
+- now going to create component file " AddUser.js ".(logic to add new user). going to add input fields and labels for username and age inside  and submit button form. Add a function onSubmit of form data addUSerHandler.
+- create a Card.js and Card.module.css component inside UI dir which is going to create a card type structure in html and inside that AddUser.js component we going to present.
+- create a Button.js and Button.module.css for Button styling
+- totally right now there are 3 components for feature combined with js and html and 3 module css styling for those component.
+- next we going manage the user input state meaning that we going to fetch and collect the data which is going to be entered and submitted by triggering the function addUserHandler().
+- for collecting the data we going to use "state variable [useState] ".
+- next adding resetting logic after submitting on the button and adding validation logic.
+- next adding a users list component where we going collect those user info and show them the page after submiting those data.
+- in this project UserLists component is called in app.js and from there we are sending collected data to the UserLists.js
+- next managing a list of users via state. we going to manage a state in app.js because it has connection with both componenet adduser and userlists and inside app.js we calling them and creating a connection.
+- next added a new component for error modal window and css file. and conditions to show them when error occured its called error state management.
+
+
+
+* what we going to add in this
+--------------------------------
+- input field (1)add username (2)add age (3)submit button
+- list of users which is going to submit
+- error messages if any input field is empty,wrong value being entered
